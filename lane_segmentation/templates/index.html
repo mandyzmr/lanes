@@ -1,0 +1,15 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Web Server</title>
+</head>
+
+<body>
+    <p>Please choose an image:</p>
+    <form action = "http://localhost:8080/infer" method = "POST" 
+        enctype = "multipart/form-data"> <!--得到path后，POST到infer页面-->
+        <input type="file" name="image_path"/> <!--Choose file按钮-->
+        <input type="submit"/>  <!--Submit按钮-->
+    </form>     
+</body>
+</html>
